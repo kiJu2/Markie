@@ -1,8 +1,4 @@
 // background.ts
-import TurndownService from "turndown"
-
-// const turndownService = new TurndownService()
-
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "copy-markdown",

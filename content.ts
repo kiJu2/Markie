@@ -2,11 +2,27 @@
 
 import TurndownService from "turndown"
 
-const turndownService = new TurndownService()
+/**
+ * @todo 다국어(중국어, 일본어, 한국어, 영어)
+ * @todo 마크다운 변환 옵션
+ * @todo 단축키 설정
+ */
+
+const turndownService = new TurndownService({
+  headingStyle: "atx",
+  hr: "---",
+  br: "\n",
+  bulletListMarker: "-",
+  codeBlockStyle: "fenced",
+  emDelimiter: "_",
+  fence: "```",
+  strongDelimiter: "__",
+  linkStyle: "inlined",
+  linkReferenceStyle: "full",
+  preformattedCode: true
+})
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  console.log("Received message from background script:", message)
-  console.log("Sender:", sender)
   if (message.action === "COPY_MARKDOWN") {
     const selection = window.getSelection()
     const range = selection?.getRangeAt(0)
@@ -16,10 +32,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     }
 
     const html = container.innerHTML
-    console.log("Selected HTML:", html)
-
     const markdown = turndownService.turndown(html)
-    console.log("Converted Markdown:", markdown)
 
     navigator.clipboard
       .writeText(markdown)

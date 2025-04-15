@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  mode: "jit",
-  darkMode: "class",
-  content: ["./**/*.tsx"],
-  plugins: []
-}
+  mode: 'jit',
+  darkMode: 'class',
+  content: ['./**/*.tsx'],
+  plugins: [require('daisyui')],
+};

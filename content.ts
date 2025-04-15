@@ -3,9 +3,10 @@
 import TurndownService from "turndown"
 
 /**
- * @todo 다국어(중국어, 일본어, 한국어, 영어)
  * @todo 마크다운 변환 옵션
+ * @todo 다국어(중국어, 일본어, 한국어, 영어)
  * @todo 단축키 설정
+ * @todo 복사 되었다는 피드백(사용자 경험 해치지 않도록 주의)
  */
 
 const turndownService = new TurndownService({

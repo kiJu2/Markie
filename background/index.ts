@@ -1,26 +1,29 @@
+import browser from 'webextension-polyfill';
+
 // background.ts
-chrome.runtime.onInstalled.addListener(() => {
+browser.runtime.onInstalled.addListener(() => {
   console.log('Markie extension installed');
-  chrome.contextMenus.create({
+  browser.contextMenus.create({
     id: 'copy-markdown',
     title: '📝 Markie로 마크다운 복사',
     contexts: ['selection'],
   });
 });
 
-chrome.runtime.onConnect.addListener((port) => {
+browser.runtime.onConnect.addListener((port) => {
   console.log('Connected to port:', port);
 });
 
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === 'copy-markdown' && tab?.id != null) {
-    chrome.tabs.sendMessage(tab.id, { action: 'COPY_MARKDOWN' }, (response) => {
-      if (chrome.runtime.lastError) {
-        console.error('Error sending message:', chrome.runtime.lastError);
-      } else {
+    browser.tabs
+      .sendMessage(tab.id, { action: 'COPY_MARKDOWN' })
+      .then((response) => {
         console.log('Response from content script:', response);
-      }
-    });
+      })
+      .catch((error) => {
+        console.error('Error sending message to content script:', error);
+      });
   }
 });
 

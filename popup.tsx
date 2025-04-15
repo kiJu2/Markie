@@ -1,26 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './styles/globals.css';
+
+import { sendToBackground } from '@plasmohq/messaging';
 
 function IndexPopup() {
   const [data, setData] = useState('');
 
+  useEffect(() => {
+    console.log('Popup mounted');
+    const resp = sendToBackground({
+      name: 'ping',
+      body: {
+        id: 123,
+      },
+    })
+      .then((res) => {
+        console.log('Response from background:', res);
+      })
+      .catch((err) => {
+        console.error('Error sending message to background:', err);
+      });
+  }, []);
+
   return (
-    <div
-      style={{
-        padding: 16,
-      }}>
-      <h2>
-        Welcome to your{' '}
-        <a href="https://www.plasmo.com" target="_blank">
-          Plasmo
-        </a>{' '}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
+    <div>
+      <h1>Hello</h1>
     </div>
   );
 }

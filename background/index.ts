@@ -10,9 +10,9 @@ browser.runtime.onInstalled.addListener(() => {
   });
 });
 
-browser.runtime.onConnect.addListener((port) => {
-  console.log('Connected to port:', port);
-});
+// browser.runtime.onConnect.addListener((port) => {
+//   console.log('Connected to port:', port);
+// });
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === 'copy-markdown' && tab?.id != null) {

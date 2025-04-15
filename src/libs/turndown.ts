@@ -1,61 +1,21 @@
 import TurndownService from 'turndown';
 
-import { Storage } from '@plasmohq/storage';
+const TURNDOWN_STORAGE_KEY = 'turndown-settings';
 
-class Turndown {
-  private storage: Storage;
-  private turndownService: TurndownService;
+const defaultOptions: TurndownService.Options = {
+  headingStyle: 'atx',
+  hr: '---',
+  br: '\n',
+  bulletListMarker: '-',
+  codeBlockStyle: 'fenced',
+  emDelimiter: '_',
+  fence: '```',
+  strongDelimiter: '**',
+  linkStyle: 'inlined',
+  linkReferenceStyle: 'full',
+  preformattedCode: true,
+};
 
-  constructor() {
-    this.storage = new Storage({
-      area: 'sync',
-    });
-  }
+export { defaultOptions, TURNDOWN_STORAGE_KEY };
 
-  async init() {
-    let settings = await this.getSettings();
-    if (settings) {
-      this.turndownService = new TurndownService(settings);
-    }
-
-    const defaultSettings: TurndownService.Options = {
-      headingStyle: 'atx',
-      hr: '---',
-      br: '\n',
-      bulletListMarker: '-',
-      codeBlockStyle: 'fenced',
-      emDelimiter: '_',
-      fence: '```',
-      strongDelimiter: '**',
-      linkStyle: 'inlined',
-      linkReferenceStyle: 'full',
-      preformattedCode: true,
-    };
-
-    await this.setSettings(defaultSettings);
-
-    this.turndownService = new TurndownService(defaultSettings);
-  }
-
-  async getSettings() {
-    const settings = await this.storage.get('turndown-settings');
-    return settings || {};
-  }
-
-  async setSettings(settings: TurndownService.Options) {
-    await this.storage.set('turndown-settings', settings);
-
-    this.turndownService = new TurndownService(settings);
-  }
-
-  convert(html: string) {
-    return this.turndownService.turndown(html);
-  }
-}
-const turndown = new Turndown();
-
-turndown.init().then(() => {
-  console.log('Turndown settings storage initialized');
-});
-
-export default turndown;
+export type { TurndownService };

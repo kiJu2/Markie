@@ -1,6 +1,8 @@
 // content.ts
-import TurndownService from 'turndown';
+// import TurndownService from 'turndown';
 import browser from 'webextension-polyfill';
+
+import turndown from './src/libs/turndown';
 
 /**
  * @todo 마크다운 변환 옵션
@@ -13,20 +15,6 @@ type CopyMarkdownMessage = {
   action: 'COPY_MARKDOWN';
 };
 
-const turndownService = new TurndownService({
-  headingStyle: 'atx',
-  hr: '---',
-  br: '\n',
-  bulletListMarker: '-',
-  codeBlockStyle: 'fenced',
-  emDelimiter: '_',
-  fence: '```',
-  strongDelimiter: '__',
-  linkStyle: 'inlined',
-  linkReferenceStyle: 'full',
-  preformattedCode: true,
-});
-
 browser.runtime.onMessage.addListener(
   async (message: CopyMarkdownMessage, sender) => {
     if (message.action === 'COPY_MARKDOWN') {
@@ -38,7 +26,7 @@ browser.runtime.onMessage.addListener(
       }
 
       const html = container.innerHTML;
-      const markdown = turndownService.turndown(html);
+      const markdown = turndown.convert(html);
 
       try {
         await navigator.clipboard.writeText(markdown);

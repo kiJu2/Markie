@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import './styles/globals.css';
+import './src/styles/globals.css';
 
 import { sendToBackground } from '@plasmohq/messaging';
 

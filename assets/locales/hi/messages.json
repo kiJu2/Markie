@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - Markdown में कॉपी करें",
+    "description": "एक्सटेंशन का नाम"
+  },
+  "extensionDescription": {
+    "message": "यह बहुत आसान है। चयनित सामग्री को Markdown में कॉपी करें।",
+    "description": "एक्सटेंशन का विवरण"
+  },
+  "popupHeader": {
+    "message": "Markie सेटिंग्स",
+    "description": "पॉपअप शीर्षक"
+  },
+  "popupHeadingStyle": {
+    "message": "शीर्षक शैली",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "बुलेट लिस्ट चिन्ह",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "कोड ब्लॉक शैली",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "इटैलिक (ज़ोर) सीमांकक",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "बोल्ड (ज़ोर) सीमांकक",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "फेंस्ड कोड ब्लॉक सीमांकक",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "लिंक शैली",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "लिंक संदर्भ शैली",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "पूर्व-स्वरूपित कोड बनाए रखें",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "सेटिंग्स स्वतः सहेज ली जाती हैं 💾",
+    "description": "Settings description"
+  }
+}

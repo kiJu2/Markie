@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - Copiar como Markdown",
+    "description": "Nombre de la extensión"
+  },
+  "extensionDescription": {
+    "message": "Muy fácil. Puedes copiar el contenido seleccionado en formato Markdown.",
+    "description": "Descripción de la extensión"
+  },
+  "popupHeader": {
+    "message": "Configuración de Markie",
+    "description": "Título del popup"
+  },
+  "popupHeadingStyle": {
+    "message": "Estilo de encabezado",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "Marcador de lista",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "Estilo del bloque de código",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "Delimitador de cursiva (énfasis)",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "Delimitador de negrita (fuerte)",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "Delimitador del bloque de código",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "Estilo de enlace",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "Estilo de referencia del enlace",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "Conservar código preformateado",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "Los ajustes se guardan automáticamente 💾",
+    "description": "Settings description"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - 마크다운으로 복사하기",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "매우 간단해요. 마크다운으로 복사할 수 있어요.",
+    "description": "Description of the extension."
+  },
+  "popupHeader": {
+    "message": "Markie 설정",
+    "description": "Popup title"
+  },
+  "popupHeadingStyle": {
+    "message": "헤딩 스타일",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "글머리 기호 스타일",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "코드 블록 스타일",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "이탤릭체(기울임) 구분자",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "강조 구분자",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "코드 블록 구분자",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "링크 스타일",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "링크 참조 방식",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "프리 포맷 코드 유지",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "설정은 자동으로 저장돼요.",
+    "description": "Settings description"
+  }
+}

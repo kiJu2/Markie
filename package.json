@@ -1,8 +1,8 @@
 {
   "name": "markie",
-  "displayName": "Markie",
+  "displayName": "__MSG_extensionName__",
   "version": "0.0.1",
-  "description": "Copy as markdown",
+  "description": "__MSG_extensionDescription__",
   "author": "thdydehfdl12@gmail.com",
   "scripts": {
     "dev": "plasmo dev",
@@ -34,9 +34,11 @@
     "typescript": "5.3.3"
   },
   "manifest": {
+    "name": "__MSG_extensionName__",
     "host_permissions": [
       "https://*/*"
     ],
+    "default_locale": "en",
     "permissions": [
       "contextMenus",
       "activeTab",

@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - 复制为Markdown",
+    "description": "扩展程序名称"
+  },
+  "extensionDescription": {
+    "message": "非常简单。你可以将选中的内容复制为Markdown格式。",
+    "description": "扩展程序描述"
+  },
+  "popupHeader": {
+    "message": "Markie 设置",
+    "description": "弹窗标题"
+  },
+  "popupHeadingStyle": {
+    "message": "标题样式",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "项目符号样式",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "代码块样式",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "斜体（强调）符号",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "加粗（强调）符号",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "代码围栏符号",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "链接样式",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "链接引用样式",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "保留预格式化代码",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "设置将自动保存 💾",
+    "description": "Settings description"
+  }
+}

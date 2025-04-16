@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import browser from 'webextension-polyfill';
 
 import { useStorage } from '@plasmohq/storage/hook';
 
@@ -39,13 +40,22 @@ function IndexPopup() {
     }));
   };
 
+  const currentLang = browser.i18n.getUILanguage();
+  const isRTL = currentLang.startsWith('ar');
+
   return (
-    <div className="p-4 space-y-4 w-80">
-      <h1 className="text-lg font-bold text-center">📝 Markie 설정</h1>
+    <div
+      className={`p-4 space-y-4 w-80 ${isRTL ? 'text-right' : ''}`}
+      dir={isRTL ? 'rtl' : 'ltr'}>
+      <h1 className="text-lg font-bold text-center">
+        📝 {browser.i18n.getMessage('popupHeader')}
+      </h1>
 
       {/* headingStyle */}
       <div className="form-control">
-        <label className="label">제목 스타일</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupHeadingStyle')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.headingStyle}
@@ -57,7 +67,9 @@ function IndexPopup() {
 
       {/* bulletListMarker */}
       <div className="form-control">
-        <label className="label">리스트 마커</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupBulletListMarker')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.bulletListMarker}
@@ -70,7 +82,9 @@ function IndexPopup() {
 
       {/* codeBlockStyle */}
       <div className="form-control">
-        <label className="label">코드 블럭 스타일</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupCodeBlockStyle')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.codeBlockStyle}
@@ -82,7 +96,9 @@ function IndexPopup() {
 
       {/* emDelimiter */}
       <div className="form-control">
-        <label className="label">기울임 구분자</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupEmDelimiter')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.emDelimiter}
@@ -94,7 +110,9 @@ function IndexPopup() {
 
       {/* strongDelimiter */}
       <div className="form-control">
-        <label className="label">굵게 구분자</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupStrongDelimiter')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.strongDelimiter}
@@ -106,7 +124,9 @@ function IndexPopup() {
 
       {/* fence */}
       <div className="form-control">
-        <label className="label">코드 Fence</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupFencedCodeBlockDelimiter')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.fence}
@@ -118,7 +138,9 @@ function IndexPopup() {
 
       {/* linkStyle */}
       <div className="form-control">
-        <label className="label">링크 스타일</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupLinkStyle')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.linkStyle}
@@ -130,7 +152,9 @@ function IndexPopup() {
 
       {/* linkReferenceStyle */}
       <div className="form-control">
-        <label className="label">링크 참조 방식</label>
+        <label className="label">
+          {browser.i18n.getMessage('popupLinkReferenceStyle')}
+        </label>
         <select
           className="select select-bordered select-sm"
           value={turndownSettings.linkReferenceStyle}
@@ -144,7 +168,9 @@ function IndexPopup() {
       {/* preformattedCode */}
       <div className="form-control">
         <label className="cursor-pointer label">
-          <span className="label-text">프리포맷 코드 유지</span>
+          <span className="label-text">
+            {browser.i18n.getMessage('popupPreformattedCode')}
+          </span>
           <input
             type="checkbox"
             className="checkbox"
@@ -155,7 +181,7 @@ function IndexPopup() {
       </div>
 
       <div className="mt-2 text-xs text-center text-gray-500">
-        설정은 자동으로 저장됩니다 💾
+        {browser.i18n.getMessage('popupSettingsDescription')} 💾
       </div>
     </div>
   );

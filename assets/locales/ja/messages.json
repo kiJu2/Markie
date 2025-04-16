@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - Markdownでコピー",
+    "description": "拡張機能の名前"
+  },
+  "extensionDescription": {
+    "message": "とてもシンプルです。選択した内容をMarkdown形式でコピーできます。",
+    "description": "拡張機能の説明"
+  },
+  "popupHeader": {
+    "message": "Markie 設定",
+    "description": "ポップアップタイトル"
+  },
+  "popupHeadingStyle": {
+    "message": "見出しスタイル",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "箇条書きマーカー",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "コードブロックスタイル",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "イタリック（強調）区切り文字",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "太字（強調）区切り文字",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "フェンス付きコード区切り文字",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "リンクスタイル",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "リンク参照スタイル",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "プリフォーマット済みコードを保持",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "設定は自動的に保存されます 💾",
+    "description": "Settings description"
+  }
+}

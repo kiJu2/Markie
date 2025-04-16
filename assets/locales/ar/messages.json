@@ -1,0 +1,54 @@
+{
+  "extensionName": {
+    "message": "Markie - نسخ بصيغة Markdown",
+    "description": "اسم الإضافة"
+  },
+  "extensionDescription": {
+    "message": "سهل جداً. يمكنك نسخ المحتوى المحدد بصيغة Markdown.",
+    "description": "وصف الإضافة"
+  },
+  "popupHeader": {
+    "message": "إعدادات Markie",
+    "description": "عنوان النافذة المنبثقة"
+  },
+  "popupHeadingStyle": {
+    "message": "نمط العنوان",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "رمز القائمة",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "نمط كتلة الكود",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "فاصل التمييز (مائل)",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "فاصل التمييز (عريض)",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "فاصل كتلة الكود المسورة",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "نمط الرابط",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "نمط مرجع الرابط",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "الاحتفاظ بالكود المنسق مسبقاً",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "يتم حفظ الإعدادات تلقائياً 💾",
+    "description": "Settings description"
+  }
+}

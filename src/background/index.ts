@@ -1,5 +1,7 @@
 import browser from 'webextension-polyfill';
 
+console.log('???????????')
+
 // background.ts
 browser.runtime.onInstalled.addListener(() => {
   console.log('Markie extension installed');
@@ -9,10 +11,6 @@ browser.runtime.onInstalled.addListener(() => {
     contexts: ['selection'],
   });
 });
-
-// browser.runtime.onConnect.addListener((port) => {
-//   console.log('Connected to port:', port);
-// });
 
 browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === 'copy-markdown' && tab?.id != null) {

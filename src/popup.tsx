@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { useStorage } from '@plasmohq/storage/hook';
 
-import './src/styles/globals.css';
+import './styles/globals.css';
 
 import { TURNDOWN_STORAGE_KEY, type TurndownService } from 'src/libs/turndown';
 

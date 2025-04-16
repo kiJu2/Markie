@@ -21,8 +21,6 @@ async function getTurndown() {
 
   const turndownStorage =
     await storage.get<TurndownService.Options>(TURNDOWN_STORAGE_KEY);
-  
-  console.log('$$ turndownStorage', turndownStorage);
 
   return new TurndownService({
     ...defaultOptions,

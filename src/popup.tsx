@@ -4,7 +4,11 @@ import { useStorage } from '@plasmohq/storage/hook';
 
 import './styles/globals.css';
 
-import { TURNDOWN_STORAGE_KEY, type TurndownService } from 'src/libs/turndown';
+import {
+  defaultOptions,
+  TURNDOWN_STORAGE_KEY,
+  type TurndownService,
+} from 'src/libs/turndown';
 
 // import { sendToBackground } from '@plasmohq/messaging';
 
@@ -12,8 +16,20 @@ function IndexPopup() {
   const [turndownSettings, setTurndownSettings, { isLoading }] =
     useStorage<TurndownService.Options>(TURNDOWN_STORAGE_KEY);
 
-  if (isLoading) {
-    return <div>Loading...</div>;
+  useEffect(() => {
+    if (isLoading) return;
+
+    if (!turndownSettings) {
+      setTurndownSettings(defaultOptions);
+    }
+  }, [turndownSettings, isLoading]);
+
+  if (!turndownSettings) {
+    return (
+      <div className="flex items-center justify-center w-full h-full">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
   }
 
   const handleChange = (key: keyof TurndownService.Options, value: any) => {

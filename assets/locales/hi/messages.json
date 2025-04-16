@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "सेटिंग्स स्वतः सहेज ली जाती हैं 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "Markdown में कॉपी करें",
+    "description": "Context menu title"
   }
 }

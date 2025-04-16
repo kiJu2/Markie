@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "يتم حفظ الإعدادات تلقائياً 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "نسخ كـ Markdown",
+    "description": "Context menu title"
   }
 }

@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "Les paramètres sont enregistrés automatiquement 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "Copier en Markdown",
+    "description": "Context menu title"
   }
 }

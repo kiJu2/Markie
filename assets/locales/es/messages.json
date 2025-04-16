@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "Los ajustes se guardan automáticamente 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "Copiar como Markdown",
+    "description": "Context menu title"
   }
 }

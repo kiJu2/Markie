@@ -35,9 +35,6 @@
   },
   "manifest": {
     "name": "__MSG_extensionName__",
-    "host_permissions": [
-      "https://*/*"
-    ],
     "default_locale": "en",
     "permissions": [
       "contextMenus",

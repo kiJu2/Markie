@@ -5,7 +5,7 @@ browser.runtime.onInstalled.addListener(() => {
   console.log('Markie extension installed');
   browser.contextMenus.create({
     id: 'copy-markdown',
-    title: '📝 Markie로 마크다운 복사',
+    title: `${browser.i18n.getMessage('contextMenuTitle')}`,
     contexts: ['selection'],
   });
 });

@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "Your settings are saved automatically.",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "Copy as Markdown",
+    "description": "Context menu title"
   }
 }

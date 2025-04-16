@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "设置将自动保存 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "复制为 Markdown",
+    "description": "Context menu title"
   }
 }

@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "설정은 자동으로 저장돼요.",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "마크다운으로 복사하기",
+    "description": "Context menu title"
   }
 }

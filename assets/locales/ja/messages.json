@@ -50,5 +50,9 @@
   "popupSettingsDescription": {
     "message": "設定は自動的に保存されます 💾",
     "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "Markdownとしてコピー",
+    "description": "Context menu title"
   }
 }

@@ -11,7 +11,7 @@ import {
   type TurndownService,
 } from 'src/libs/turndown';
 
-// import { sendToBackground } from '@plasmohq/messaging';
+// @FIXME: whale에서 popup 켜면 `turndownSettings`이 undefined로 떠서 빈 공간만 출력됨
 
 function IndexPopup() {
   const [turndownSettings, setTurndownSettings, { isLoading }] =
@@ -50,6 +50,19 @@ function IndexPopup() {
       <h1 className="text-lg font-bold text-center">
         📝 {browser.i18n.getMessage('popupHeader')}
       </h1>
+      <div className="text-center">
+        <a
+          href="https://www.buymeacoffee.com/thdydehfdl12"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block">
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+            className="object-contain w-40"
+          />
+        </a>
+      </div>
 
       {/* headingStyle */}
       <div className="form-control">
@@ -188,3 +201,5 @@ function IndexPopup() {
 }
 
 export default IndexPopup;
+
+// TODO: buy me coffee 추가하기

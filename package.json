@@ -1,7 +1,7 @@
 {
   "name": "markie",
   "displayName": "__MSG_extensionName__",
-  "version": "25.4.17",
+  "version": "25.4.19",
   "description": "__MSG_extensionDescription__",
   "author": "thdydehfdl12@gmail.com",
   "scripts": {
@@ -38,11 +38,7 @@
     "default_locale": "en",
     "permissions": [
       "contextMenus",
-      "activeTab",
-      "scripting",
-      "clipboardWrite",
-      "tabs",
-      "activeTab"
+      "clipboardWrite"
     ],
     "browser_specific_settings": {
       "gecko": {

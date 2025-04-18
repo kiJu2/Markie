@@ -1,0 +1,58 @@
+{
+  "extensionName": {
+    "message": "Markie - 複製為 Markdown",
+    "description": "擴充功能名稱"
+  },
+  "extensionDescription": {
+    "message": "非常簡單。你可以將選取的內容複製為 Markdown 格式。",
+    "description": "擴充功能描述"
+  },
+  "popupHeader": {
+    "message": "Markie 設定",
+    "description": "彈出視窗標題"
+  },
+  "popupHeadingStyle": {
+    "message": "標題樣式",
+    "description": "Heading style"
+  },
+  "popupBulletListMarker": {
+    "message": "項目符號樣式",
+    "description": "Bullet list marker"
+  },
+  "popupCodeBlockStyle": {
+    "message": "程式碼區塊樣式",
+    "description": "Code block style"
+  },
+  "popupEmDelimiter": {
+    "message": "斜體（強調）符號",
+    "description": "Emphasis delimiter"
+  },
+  "popupStrongDelimiter": {
+    "message": "粗體（強調）符號",
+    "description": "Strong emphasis delimiter"
+  },
+  "popupFencedCodeBlockDelimiter": {
+    "message": "程式碼框線符號",
+    "description": "Fenced code block delimiter"
+  },
+  "popupLinkStyle": {
+    "message": "連結樣式",
+    "description": "Link style"
+  },
+  "popupLinkReferenceStyle": {
+    "message": "連結參考樣式",
+    "description": "Link reference style"
+  },
+  "popupPreformattedCode": {
+    "message": "保留預格式化程式碼",
+    "description": "Preformatted code"
+  },
+  "popupSettingsDescription": {
+    "message": "設定會自動儲存 💾",
+    "description": "Settings description"
+  },
+  "contextMenuTitle": {
+    "message": "複製為 Markdown",
+    "description": "Context menu title"
+  }
+}

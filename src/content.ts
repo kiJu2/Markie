@@ -64,4 +64,4 @@ browser.runtime.onMessage.addListener(async (message: CopyMarkdownMessage) => {
   return false; // 메시지가 아닌 경우 false 반환
 });
 
-export {};
+// export {};
